@@ -93,4 +93,19 @@ class PID
 
                 self.output = self.Pterm + (self.Ki * self.ITerm) + (self.Kd * self.DTerm)
 
+    def setKp(self, proportional_gain):
+        """Determines how agressivly the PID reacts to the current error with setting Proportional Gain"""
+        self.Kp = proportional_gain
+
+    def setKi(self, integral_gail):
+        """Determines how aggressively the PID reacts to the current error with setting integral Gain"""
+        self.Ki = integra_gain
+
+    def setWindup(self, windup):
+        """Integral windup, also known as integrator windup or reset windup, refers to the situation in PID feedback collter where a large change in setpoint occurs (say a positive change) and the integral terms accumulates a signiticant error during the rise (windup), thus overshooting the continuing to increase as this aculated error is unwound (offset by errors in the other direciton). The specific problem is the exess overshooting."""
+        self.windup_guard = windup
+
+    def setSampleTime(self, sample_time):
+        """PID that should be updated at a regular interval. Based on a pre-determined sample time, the PID decides if it should compute or return immediately."""
+        self.sample_time = sample_time
 
