@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:AR_20_JW_Rev2-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,28 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L AR_20_JW_Rev2-rescue:INPUT-AR_20_JW U4
-U 1 1 5D698443
-P 7300 3800
-F 0 "U4" H 7828 3501 50  0000 L CNN
-F 1 "INPUT" H 7828 3410 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7300 3800 50  0001 C CNN
-F 3 "" H 7300 3800 50  0001 C CNN
-	1    7300 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L AR_20_JW_Rev2-rescue:SWITCH-AR_20_JW U5
-U 1 1 5D6990CA
-P 7400 5250
-F 0 "U5" H 7928 4951 50  0000 L CNN
-F 1 "SWITCH" H 7928 4860 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7400 5250 50  0001 C CNN
-F 3 "" H 7400 5250 50  0001 C CNN
-	1    7400 5250
-	1    0    0    -1  
-$EndComp
 $Comp
 L AR_20_JW_Rev2-rescue:ICSP-AR_20_JW U2
 U 1 1 5D69D662
@@ -93,68 +70,6 @@ Text Label 7100 3000 2    50   ~ 0
 CS
 Wire Wire Line
 	7100 3000 7400 3000
-Text Label 7000 3900 2    50   ~ 0
-TX_1
-Wire Wire Line
-	7000 3900 7300 3900
-$Comp
-L power:GND #PWR07
-U 1 1 5D6D4FCE
-P 7300 4000
-F 0 "#PWR07" H 7300 3750 50  0001 C CNN
-F 1 "GND" V 7305 3872 50  0000 R CNN
-F 2 "" H 7300 4000 50  0001 C CNN
-F 3 "" H 7300 4000 50  0001 C CNN
-	1    7300 4000
-	0    1    1    0   
-$EndComp
-Text Label 7000 4100 2    50   ~ 0
-FDB_SIG
-Wire Wire Line
-	7000 4100 7300 4100
-Text Label 7000 4200 2    50   ~ 0
-VCC
-Wire Wire Line
-	7000 4200 7300 4200
-Text Label 7000 4300 2    50   ~ 0
-VCC
-Wire Wire Line
-	7000 4300 7300 4300
-$Comp
-L power:GND #PWR08
-U 1 1 5D6DABB1
-P 7300 4400
-F 0 "#PWR08" H 7300 4150 50  0001 C CNN
-F 1 "GND" V 7300 4200 50  0000 C CNN
-F 2 "" H 7300 4400 50  0001 C CNN
-F 3 "" H 7300 4400 50  0001 C CNN
-	1    7300 4400
-	0    1    1    0   
-$EndComp
-Text Label 7100 5350 2    50   ~ 0
-AUX_1
-Wire Wire Line
-	7100 5350 7400 5350
-Text Label 7100 5450 2    50   ~ 0
-AUX_2
-Wire Wire Line
-	7100 5450 7400 5450
-Text Label 7100 5550 2    50   ~ 0
-VCC
-Wire Wire Line
-	7100 5550 7400 5550
-Text Label 7100 5650 2    50   ~ 0
-SIG_RUN
-Text Label 7100 5750 2    50   ~ 0
-SIG_CNT
-Text Label 7100 5850 2    50   ~ 0
-SIG_EXT
-Wire Wire Line
-	7100 5850 7400 5850
-Wire Wire Line
-	7100 5750 7400 5750
-Wire Wire Line
-	7100 5650 7400 5650
 Text Label 6950 1400 2    50   ~ 0
 SO
 Text Label 6950 1500 2    50   ~ 0
@@ -193,10 +108,6 @@ Wire Wire Line
 Wire Wire Line
 	2750 3200 2850 3200
 Wire Wire Line
-	3550 4150 3550 4200
-Wire Wire Line
-	3100 4150 3550 4150
-Wire Wire Line
 	2750 3450 2600 3450
 Connection ~ 2750 3450
 Text Label 3150 3200 0    50   ~ 0
@@ -210,17 +121,6 @@ F 1 "5k" V 3100 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 2930 3200 50  0001 C CNN
 F 3 "~" H 3000 3200 50  0001 C CNN
 	1    3000 3200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5D706A4D
-P 3700 4200
-F 0 "R5" V 3700 4200 50  0000 C CNN
-F 1 "5k" V 3800 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3630 4200 50  0001 C CNN
-F 3 "~" H 3700 4200 50  0001 C CNN
-	1    3700 4200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -256,87 +156,9 @@ F 3 "~" H 3200 2050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3850 3800 3850 4000
-Wire Wire Line
-	3550 3900 3550 3800
-Wire Wire Line
-	2900 3900 3550 3900
-Wire Wire Line
-	3000 4000 3550 4000
-$Comp
-L Device:R R4
-U 1 1 5D7065FE
-P 3700 4000
-F 0 "R4" V 3700 4000 50  0000 C CNN
-F 1 "5k" V 3800 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3630 4000 50  0001 C CNN
-F 3 "~" H 3700 4000 50  0001 C CNN
-	1    3700 4000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5D702E96
-P 3700 3800
-F 0 "R3" V 3700 3800 50  0000 C CNN
-F 1 "5k" V 3800 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 3630 3800 50  0001 C CNN
-F 3 "~" H 3700 3800 50  0001 C CNN
-	1    3700 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5D6EBAA6
-P 3850 4000
-F 0 "#PWR04" H 3850 3750 50  0001 C CNN
-F 1 "GND" V 3855 3872 50  0000 R CNN
-F 2 "" H 3850 4000 50  0001 C CNN
-F 3 "" H 3850 4000 50  0001 C CNN
-	1    3850 4000
-	0    -1   -1   0   
-$EndComp
-Connection ~ 3850 4000
-Wire Wire Line
-	3850 4000 3850 4200
-Text Label 3100 4250 0    50   ~ 0
-SIG_EXT
-Text Label 3000 4100 0    50   ~ 0
-SIG_CNT
-Text Label 2900 4000 0    50   ~ 0
-SIG_RUN
-Wire Wire Line
-	2900 4050 2900 3900
-Wire Wire Line
-	2600 4050 2900 4050
-Wire Wire Line
-	3000 4150 3000 4000
-Wire Wire Line
-	2600 4150 3000 4150
-Wire Wire Line
-	3100 4250 3100 4150
-Wire Wire Line
-	2600 4250 3100 4250
-Wire Wire Line
-	2900 1950 2600 1950
-Text Label 2900 1950 0    50   ~ 0
-AUX_2
-Wire Wire Line
-	2600 4350 2900 4350
-Text Label 2900 4350 0    50   ~ 0
-AUX_1
-Wire Wire Line
 	2600 2650 3250 2650
 Wire Wire Line
 	2600 2550 3250 2550
-Wire Wire Line
-	2850 2850 2600 2850
-Text Label 2850 2850 0    50   ~ 0
-FDB_SIG
-Wire Wire Line
-	2850 3750 2600 3750
-Text Label 2850 3750 0    50   ~ 0
-TX_1
 Wire Wire Line
 	2600 2150 2850 2150
 Text Label 2850 2150 0    50   ~ 0
@@ -473,7 +295,7 @@ F 3 "~" H 3600 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U1
+L AR_20_JW_Rev2-rescue:ATmega328P-PU-MCU_Microchip_ATmega U1
 U 1 1 5D6630FA
 P 2000 3150
 F 0 "U1" H 1356 3196 50  0000 R CNN
@@ -481,6 +303,105 @@ F 1 "ATmega328P-PU" H 1356 3105 50  0000 R CNN
 F 2 "Package_DIP:DIP-28_W7.62mm" H 2000 3150 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 2000 3150 50  0001 C CNN
 	1    2000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR_20_JW_Rev2-rescue:RIDE U?
+U 1 1 5DF69CF6
+P 1750 5450
+F 0 "U?" H 2128 5401 50  0000 L CNN
+F 1 "RIDE" H 2128 5310 50  0000 L CNN
+F 2 "" H 1750 5350 50  0001 C CNN
+F 3 "" H 1750 5350 50  0001 C CNN
+	1    1750 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR_20_JW_Rev2-rescue:RIDE U?
+U 1 1 5DF6A41E
+P 1750 5850
+F 0 "U?" H 2128 5801 50  0000 L CNN
+F 1 "RIDE" H 2128 5710 50  0000 L CNN
+F 2 "" H 1750 5750 50  0001 C CNN
+F 3 "" H 1750 5750 50  0001 C CNN
+	1    1750 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR_20_JW_Rev2-rescue:RIDE U?
+U 1 1 5DF6C4C1
+P 1750 6250
+F 0 "U?" H 2128 6201 50  0000 L CNN
+F 1 "RIDE" H 2128 6110 50  0000 L CNN
+F 2 "" H 1750 6150 50  0001 C CNN
+F 3 "" H 1750 6150 50  0001 C CNN
+	1    1750 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR_20_JW_Rev2-rescue:RIDE U?
+U 1 1 5DF6E1AB
+P 1750 6650
+F 0 "U?" H 2128 6601 50  0000 L CNN
+F 1 "RIDE" H 2128 6510 50  0000 L CNN
+F 2 "" H 1750 6550 50  0001 C CNN
+F 3 "" H 1750 6550 50  0001 C CNN
+	1    1750 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR_20_JW_Rev2-rescue:RIDE U?
+U 1 1 5DF7D768
+P 3200 5500
+F 0 "U?" H 3578 5451 50  0000 L CNN
+F 1 "STR" H 3578 5360 50  0000 L CNN
+F 2 "" H 3200 5400 50  0001 C CNN
+F 3 "" H 3200 5400 50  0001 C CNN
+	1    3200 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR_20_JW_Rev2-rescue:SPD_1 U?
+U 1 1 5DF9E963
+P 4400 5550
+F 0 "U?" H 4728 5551 50  0000 L CNN
+F 1 "SPD" H 4728 5460 50  0000 L CNN
+F 2 "" H 4400 5550 50  0001 C CNN
+F 3 "" H 4400 5550 50  0001 C CNN
+	1    4400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR_20_JW_Rev2-rescue:SPD_1 U?
+U 1 1 5DFA1493
+P 4400 5900
+F 0 "U?" H 4728 5901 50  0000 L CNN
+F 1 "SPD" H 4728 5810 50  0000 L CNN
+F 2 "" H 4400 5900 50  0001 C CNN
+F 3 "" H 4400 5900 50  0001 C CNN
+	1    4400 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR_20_JW_Rev2-rescue:SPD_1 U?
+U 1 1 5DFA283F
+P 4400 6250
+F 0 "U?" H 4728 6251 50  0000 L CNN
+F 1 "SPD" H 4728 6160 50  0000 L CNN
+F 2 "" H 4400 6250 50  0001 C CNN
+F 3 "" H 4400 6250 50  0001 C CNN
+	1    4400 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L AR_20_JW_Rev2-rescue:SPD_1 U?
+U 1 1 5DFA3CB6
+P 4400 6600
+F 0 "U?" H 4728 6601 50  0000 L CNN
+F 1 "SPD" H 4728 6510 50  0000 L CNN
+F 2 "" H 4400 6600 50  0001 C CNN
+F 3 "" H 4400 6600 50  0001 C CNN
+	1    4400 6600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
